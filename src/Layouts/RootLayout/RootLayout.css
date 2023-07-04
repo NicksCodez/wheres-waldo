@@ -1,0 +1,39 @@
+#rootLayout {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+header nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.25s;
+  border-radius: 8px;
+}
+
+header nav a:hover {
+  background-color: #00005f;
+}
+
+.active {
+  background-color: #00005f;
+}
+
+header nav h1 {
+  margin-left: 6rem;
+}
+
+main {
+  flex-grow: 1;
+}

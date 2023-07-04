@@ -1,0 +1,51 @@
+#WinForm {
+  position: fixed;
+  left: -70%;
+  top: -70%;
+  background-color: #0e0c31;
+  padding: 3rem 1rem;
+  border-radius: 0.5rem;
+}
+
+#WinForm.active {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#WinForm h3 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+#WinForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+#WinForm input:read-only,
+#WinForm input:read-only:focus-visible {
+  margin: 1rem 0;
+  padding: 0;
+  background-color: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  pointer-events: none;
+  outline: none;
+}
+
+#WinForm label > span {
+  margin-right: 0.5rem;
+}
+
+#WinForm label > input {
+  padding: 0.5rem;
+}
+
+#WinForm button {
+  margin-top: 2rem;
+  cursor: pointer;
+}

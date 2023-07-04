@@ -1,0 +1,15 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #0e0c31;
+}
+
+#root {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}

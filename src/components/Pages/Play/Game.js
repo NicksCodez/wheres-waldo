@@ -66,8 +66,11 @@ export default function Game() {
     if (
       (event.target.getAttribute('alt') &&
         event.target.getAttribute('alt') === lastClicked.toLowerCase()) ||
-      (event.target.firstChild &&
+      (event.target.firstChild.firstChild &&
         event.target.firstChild.firstChild.getAttribute('alt') ==
+          lastClicked.toLowerCase()) ||
+      (event.target.firstChild &&
+        event.target.firstChild.getAttribute('alt') ==
           lastClicked.toLowerCase())
     ) {
       if (!guessed.includes(lastClicked)) {
